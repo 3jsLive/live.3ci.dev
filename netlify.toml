@@ -1,0 +1,25 @@
+[[redirects]]
+  from = "/rev/:sha/build/three.js"
+  to = "http://3jslive.saeder.com:5080/builds/:sha.js"
+  status = 200
+
+[[redirects]]
+  from = "/rev/:sha/build/three.min.js"
+  to = "http://3jslive.saeder.com:5080/builds/:sha.min.js"
+  status = 200
+
+[[redirects]]
+  from = "/rev/:sha/build/three.module.js"
+  to = "http://3jslive.saeder.com:5080/builds/:sha.module.js"
+  status = 200
+
+[[redirects]]
+  from = "/rev/:sha/*"
+  to = "https://rawcdn.githack.com/mrdoob/three.js/:sha/:splat"
+  status = 200
+
+[build]
+  functionsSource = "functions"
+  functions = "functions-build"
+  command = "npm run build"
+  publish = "dist"
