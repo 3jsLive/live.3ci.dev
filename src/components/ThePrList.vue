@@ -236,8 +236,8 @@ export default {
 
 			this.loading.prs = true;
 
-			return fetch( `http://localhost:9871/pullrequests?state=${this.filterState.join( ',' )}` )
-			// return fetch( `/.netlify/functions/get-pullrequests?state=${this.filterState.join( ',' )}` )
+			// return fetch( `http://localhost:9871/pullrequests?state=${this.filterState.join( ',' )}` )
+			return fetch( `/.netlify/functions/get-pullrequests?state=${this.filterState.join( ',' )}` )
 				.then( res => res.json() )
 				.then( content => {
 

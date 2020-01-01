@@ -82,8 +82,8 @@ export default {
 
 		loadCommitsList() {
 
-			return fetch( `http://localhost:9871/commits` )
-			// return fetch( `/.netlify/functions/get-commits` )
+			// return fetch( `http://localhost:9871/commits` )
+			return fetch( `/.netlify/functions/get-commits` )
 				.then( res => res.json() )
 				.then( content => {
 
