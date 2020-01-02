@@ -44,7 +44,7 @@
           <a
             :id="`selectHead-${pullrequest.number}`"
             class="btn btn-sm btn-outline-primary mr-3 d-none d-lg-block"
-            :href="`https://boring-yonath-44424e.netlify.com/rev/${pullrequest.commits[ 0 ].sha}/examples/`"
+            :href="`https://dreamy-visvesvaraya-ba5944.netlify.com/rev/${pullrequest.commits[ 0 ].sha}/examples/`"
           >
             Select HEAD
           </a>
