@@ -17,7 +17,7 @@
       </span>
       <a
         class="text-decoration-none text-black"
-        :href="`https://dreamy-visvesvaraya-ba5944.netlify.com/rev/${commit.sha}/examples/`"
+        :href="`https://live.3ci.dev/rev/${commit.sha}/examples/`"
       >
         {{ commit.message | trimMerges }}
       </a>
